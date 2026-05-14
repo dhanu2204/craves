@@ -1,0 +1,48 @@
+.bg{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 35px;
+    width: 170px;
+    height: 70px;
+    cursor: pointer;
+}
+.slider{
+    display: inline-block;
+    appearance: none;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    left: px;
+    transition: 0.5s ease-in-out;
+}
+.dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.dark .bg{
+    background-color: black;
+    border: 1px solid white;
+}
+.dark .slider{
+    background-color: white;
+}
+.light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.slider:checked{
+    left: 100px;
+}

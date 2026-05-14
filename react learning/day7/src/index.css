@@ -1,0 +1,32 @@
+:root {
+  /* Light Mode Variables (Default) */
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --header-bg: #ffffff;
+  --header-text: #212529;
+  --primary-color: #49a43b;
+  --input-bg: #ffffff;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  /* Dark Mode Variables (Lighter Black) */
+  --bg-color: #121212;
+  --text-color: #e9ecef;
+  --header-bg: #1e1e1e;
+  --header-text: #e9ecef;
+  --primary-color: #5bbd4d;
+  --input-bg: #2d2d2d;
+  --card-bg: #1e1e1e;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
